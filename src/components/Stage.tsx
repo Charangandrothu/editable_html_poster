@@ -95,11 +95,11 @@ export function Stage({
     const isSelected = selectedElementId === element.id;
     const isDragging = draggedElement === element.id;
     
-    const elementStyle = {
+    const elementStyle: React.CSSProperties = {
       ...element.style,
       border: isSelected ? '2px solid #3b82f6' : element.style.border,
       cursor: isDragging ? 'grabbing' : 'grab',
-      userSelect: 'none',
+      userSelect: 'none' as const,
       transform: element.style.rotation ? `rotate(${element.style.rotation}deg)` : element.style.transform,
       transition: isDragging ? 'none' : 'all 0.2s ease',
       boxShadow: isSelected ? '0 0 0 2px #3b82f6, 0 4px 12px rgba(59, 130, 246, 0.3)' : '0 2px 8px rgba(0, 0, 0, 0.1)',
