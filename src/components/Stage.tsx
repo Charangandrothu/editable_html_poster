@@ -53,13 +53,16 @@ export function Stage({
     const constrainedX = Math.max(0, Math.min(newX, 720 - (elements.find(el => el.id === draggedElement)?.style.width || 100)));
     const constrainedY = Math.max(0, Math.min(newY, 720 - (elements.find(el => el.id === draggedElement)?.style.height || 50)));
 
-    onUpdateElement(draggedElement, {
-      style: {
-        ...elements.find(el => el.id === draggedElement)?.style,
-        left: constrainedX,
-        top: constrainedY
-      }
-    });
+    const element = elements.find(el => el.id === draggedElement);
+    if (element) {
+      onUpdateElement(draggedElement, {
+        style: {
+          ...element.style,
+          left: constrainedX,
+          top: constrainedY
+        }
+      });
+    }
   }, [draggedElement, dragOffset, elements, onUpdateElement]);
 
   const handleMouseUp = useCallback(() => {
