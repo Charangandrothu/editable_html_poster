@@ -47,4 +47,5 @@ export interface StageProps {
   onSelectElement: (elementId: string | null) => void;
   onUpdateElement: (elementId: string, updates: Partial<ElementData>) => void;
   onDeleteElement: (elementId: string) => void;
+  onAddElement: (type: 'text' | 'image') => void;
 }

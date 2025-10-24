@@ -8,7 +8,8 @@ export function Stage({
   selectedElementId, 
   onSelectElement, 
   onUpdateElement, 
-  onDeleteElement 
+  onDeleteElement,
+  onAddElement
 }: StageProps) {
   const stageRef = useRef<HTMLDivElement>(null);
   const [draggedElement, setDraggedElement] = useState<string | null>(null);
@@ -227,13 +228,19 @@ export function Stage({
             <p className="text-gray-500 mb-4">Add text or images to begin designing your poster</p>
             <div className="flex justify-center space-x-3">
               <button
-                onClick={() => onAddElement('text')}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onAddElement('text');
+                }}
                 className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm"
               >
                 Add Text
               </button>
               <button
-                onClick={() => onAddElement('image')}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onAddElement('image');
+                }}
                 className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm"
               >
                 Add Image

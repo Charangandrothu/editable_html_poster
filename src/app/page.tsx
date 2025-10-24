@@ -110,13 +110,14 @@ export default function Home() {
       <div className="flex-1 flex overflow-hidden">
         <div className="flex-1 flex items-center justify-center p-6 bg-gradient-to-br from-white to-gray-50">
           <div className="relative">
-            <Stage
-              elements={stageState.elements}
-              selectedElementId={stageState.selectedElementId}
-              onSelectElement={handleSelectElement}
-              onUpdateElement={handleUpdateElement}
-              onDeleteElement={handleDeleteElement}
-            />
+          <Stage
+            elements={stageState.elements}
+            selectedElementId={stageState.selectedElementId}
+            onSelectElement={handleSelectElement}
+            onUpdateElement={handleUpdateElement}
+            onDeleteElement={handleDeleteElement}
+            onAddElement={handleAddElement}
+          />
             <div className="absolute -bottom-4 -right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
               720×720
             </div>
