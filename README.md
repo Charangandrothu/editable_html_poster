@@ -28,7 +28,7 @@ A modern web application for creating and editing HTML posters with a visual, dr
 - **Size adjustment** with width/height controls
 - **Drag-and-drop positioning**
 
-### 📥 HTML Import/Export
+### 📥 HTML Import and Export
 - **HTML file upload** with sanitization using DOMPurify
 - **Paste HTML** directly into the editor
 - **Export to HTML** with proper structure and metadata
