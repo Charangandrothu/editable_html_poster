@@ -22,7 +22,7 @@ A modern web application for creating and editing HTML posters with a visual, dr
 - **Background color** support
 - **Real-time preview** of changes
 
-### 🖼️ Image Editing
+###  Image Editing
 - **Image replacement** via URL or file upload
 - **Alt text management** for accessibility
 - **Size adjustment** with width/height controls
