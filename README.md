@@ -34,7 +34,7 @@ A modern web application for creating and editing HTML posters with a visual, dr
 - **Export to HTML** with proper structure and metadata
 - **Safe HTML parsing** with XSS protection
 
-### 🎯 User Experience
+###  User Experience
 - **Properties Panel**: Edit element properties in real-time
 - **Keyboard Shortcuts**: Delete key for element removal
 - **Visual Selection**: Clear element highlighting
