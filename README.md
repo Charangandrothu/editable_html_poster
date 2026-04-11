@@ -10,7 +10,7 @@ A modern web application for creating and editing HTML posters with a visual, dr
 - **Real-time visual feedback** with element selection highlighting
 - **Zoom and pan** capabilities for detailed editing
 
-### 📝 Element Management
+###  Element Management
 - **Text Elements**: Add, edit, and style text with inline editing
 - **Image Elements**: Upload images via URL or file upload
 - **Element Properties**: Comprehensive property panel for styling
