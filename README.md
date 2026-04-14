@@ -16,7 +16,7 @@ A modern web application for creating and editing HTML posters with a visual, dr
 - **Element Properties**: Comprehensive property panel for styling
 - **Element Deletion**: Delete elements with keyboard shortcuts or UI buttons
 
-### 🔧 Text Editing
+###  Text Editing
 - **Inline text editing** with double-click activation
 - **Font customization**: size, weight, color
 - **Background color** support
