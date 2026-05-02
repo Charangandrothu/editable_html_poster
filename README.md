@@ -5,7 +5,7 @@ A modern web application for creating and editing HTML posters with a visual, dr
 ## Features
 
 ###  Visual Editor
-- **720×720px fixed canvas** for consistent poster sizing
+- **720×720px fixed canvas for consistent poster sizing
 - **Drag-and-drop** element positioning with `react-draggable`
 - **Real-time visual feedback** with element selection highlighting
 - **Zoom and pan** capabilities for detailed editing
